@@ -11,6 +11,13 @@
 		7A539FFC2C0DD04D009D8094 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A539FFB2C0DD04D009D8094 /* ContentView.swift */; };
 		7A539FFE2C0DD04F009D8094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A539FFD2C0DD04F009D8094 /* Assets.xcassets */; };
 		7A53A0012C0DD04F009D8094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A53A0002C0DD04F009D8094 /* Preview Assets.xcassets */; };
+		7A53A0082C0DD1BA009D8094 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0072C0DD1BA009D8094 /* HomeView.swift */; };
+		7A53A00B2C0DD1DB009D8094 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A00A2C0DD1DB009D8094 /* EditView.swift */; };
+		7A53A0102C0DD860009D8094 /* AlarmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A00F2C0DD860009D8094 /* AlarmRepository.swift */; };
+		7A53A0142C0DD909009D8094 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0132C0DD909009D8094 /* AlarmView.swift */; };
+		7A53A0172C0DDD0F009D8094 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */; };
+		7A53A01A2C0DE053009D8094 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0192C0DE053009D8094 /* HomePresenter.swift */; };
+		7A53A01C2C0DE064009D8094 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A01B2C0DE064009D8094 /* EditPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		7A539FFB2C0DD04D009D8094 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A539FFD2C0DD04F009D8094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A53A0002C0DD04F009D8094 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A53A0072C0DD1BA009D8094 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7A53A00A2C0DD1DB009D8094 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		7A53A00F2C0DD860009D8094 /* AlarmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRepository.swift; sourceTree = "<group>"; };
+		7A53A0132C0DD909009D8094 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		7A53A0192C0DE053009D8094 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		7A53A01B2C0DE064009D8094 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		7A539FF82C0DD04D009D8094 /* Alarmify */ = {
 			isa = PBXGroup;
 			children = (
-				7A539FF92C0DD04D009D8094 /* AlarmifyApp.swift */,
-				7A539FFB2C0DD04D009D8094 /* ContentView.swift */,
+				7A53A0122C0DD88A009D8094 /* App */,
+				7A53A0112C0DD86F009D8094 /* Root  */,
+				7A53A00E2C0DD849009D8094 /* Repositry */,
+				7A53A0092C0DD1C5009D8094 /* Views */,
+				7A53A0182C0DE02E009D8094 /* ViewPresenters */,
 				7A539FFD2C0DD04F009D8094 /* Assets.xcassets */,
 				7A539FFF2C0DD04F009D8094 /* Preview Content */,
 			);
@@ -65,6 +82,58 @@
 				7A53A0002C0DD04F009D8094 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A53A0092C0DD1C5009D8094 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A53A0152C0DD91E009D8094 /* Main */,
+				7A53A0132C0DD909009D8094 /* AlarmView.swift */,
+				7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A53A00E2C0DD849009D8094 /* Repositry */ = {
+			isa = PBXGroup;
+			children = (
+				7A53A00F2C0DD860009D8094 /* AlarmRepository.swift */,
+			);
+			path = Repositry;
+			sourceTree = "<group>";
+		};
+		7A53A0112C0DD86F009D8094 /* Root  */ = {
+			isa = PBXGroup;
+			children = (
+				7A539FFB2C0DD04D009D8094 /* ContentView.swift */,
+			);
+			path = "Root ";
+			sourceTree = "<group>";
+		};
+		7A53A0122C0DD88A009D8094 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7A539FF92C0DD04D009D8094 /* AlarmifyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7A53A0152C0DD91E009D8094 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7A53A0072C0DD1BA009D8094 /* HomeView.swift */,
+				7A53A00A2C0DD1DB009D8094 /* EditView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7A53A0182C0DE02E009D8094 /* ViewPresenters */ = {
+			isa = PBXGroup;
+			children = (
+				7A53A0192C0DE053009D8094 /* HomePresenter.swift */,
+				7A53A01B2C0DE064009D8094 /* EditPresenter.swift */,
+			);
+			path = ViewPresenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A53A0102C0DD860009D8094 /* AlarmRepository.swift in Sources */,
+				7A53A0082C0DD1BA009D8094 /* HomeView.swift in Sources */,
+				7A53A01C2C0DE064009D8094 /* EditPresenter.swift in Sources */,
 				7A539FFC2C0DD04D009D8094 /* ContentView.swift in Sources */,
+				7A53A00B2C0DD1DB009D8094 /* EditView.swift in Sources */,
+				7A53A0142C0DD909009D8094 /* AlarmView.swift in Sources */,
+				7A53A0172C0DDD0F009D8094 /* AlarmListView.swift in Sources */,
 				7A539FFA2C0DD04D009D8094 /* AlarmifyApp.swift in Sources */,
+				7A53A01A2C0DE053009D8094 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
