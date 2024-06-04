@@ -16,22 +16,22 @@ struct EditView: View {
                 FeaturesListVIew()
                 
             }.navigationTitle("Edit Alarm")
-             .navigationBarTitleDisplayMode(.inline)
-             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("cancel") {
-                        print("toggled!")
-                        alarmdata.editsheetshown.toggle()
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("cancel") {
+                            print("toggled!")
+                            alarmdata.editsheetshown.toggle()
+                        }
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Save") {
+                            print("toggled!")
+                            alarmdata.editsheetshown.toggle()
+                        }.bold()
                     }
                 }
-                ToolbarItem(placement: .topBarTrailing) {
-                Button("Save") {
-                    print("toggled!")
-                    alarmdata.editsheetshown.toggle()
-                }.bold()
-            }
-        }
-             .preferredColorScheme(.dark)
+                .preferredColorScheme(.dark)
         }
     }
 }

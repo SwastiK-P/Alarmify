@@ -14,7 +14,6 @@ struct ContentView: View {
             HomeView()
                 .tabItem {Label("Alarms", systemImage: "alarm.fill")}
         }.environmentObject(alarmdata)
-        
     }
 }
 

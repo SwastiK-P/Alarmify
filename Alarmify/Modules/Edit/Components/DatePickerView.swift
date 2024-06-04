@@ -17,13 +17,13 @@ struct DatePickerView: View {
                     .tint(.accentColor)
                 
             }.padding()
-             .navigationTitle("Pause alarm")
-             .navigationBarTitleDisplayMode(.inline)
-             .toolbar {
-                 Button("Done") {
-                     alarmdata.pausesheetshown.toggle()
-                 }
-             }
+                .navigationTitle("Pause alarm")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    Button("Done") {
+                        alarmdata.pausesheetshown.toggle()
+                    }
+                }
         }
     }
 }

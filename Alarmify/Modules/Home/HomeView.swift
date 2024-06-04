@@ -13,15 +13,15 @@ struct HomeView: View {
             VStack {
                 AlarmListView()
             }.navigationTitle("Alarms")
-             .toolbar {
-                     Button {
-                   } label: {
-                      Image(systemName: "plus")
+                .toolbar {
+                    Button {
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                 }
-            }
-             .onAppear {
-                 GetNotificationPermission()
-             }
+                .onAppear {
+                    GetNotificationPermission()
+                }
         }.preferredColorScheme(.dark)
     }
 }
@@ -31,6 +31,6 @@ struct HomeView: View {
         HomeView()
             .environmentObject(AlarmData())
             .tabItem {Label("Alarms", systemImage: "alarm.fill")}
-            
+        
     }
 }

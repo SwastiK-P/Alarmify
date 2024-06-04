@@ -37,17 +37,17 @@ struct WeekDaysView: View {
             }.toggleStyle(.button)
         }.padding(.vertical)
             .onChange(of: alarmdata.Everyday) {
-               if alarmdata.Everyday == true {
+                if alarmdata.Everyday == true {
                     isclicked = true
                     isclicked2 = true
                 }
                 else if alarmdata.Everyday == false {
-                     isclicked = false
-                     isclicked2 = false
-                 }
-            }
+                    isclicked = false
+                    isclicked2 = false
+                }
         }
     }
+}
 
 
 #Preview {

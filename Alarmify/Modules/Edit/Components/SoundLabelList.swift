@@ -21,15 +21,13 @@ struct SoundSelectorView: View {
                 Text("Sound")
                     .foregroundStyle(.white)
             }.pickerStyle(.navigationLink)
-            
-            
-            }
         }
     }
-    
+}
+
 #Preview {
     
-        SoundSelectorView()
-            .environmentObject(AlarmData())
+    SoundSelectorView()
+        .environmentObject(AlarmData())
     
 }

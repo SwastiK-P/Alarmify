@@ -21,11 +21,11 @@ struct DaySelectionView: View {
                 Button {
                     alarmdata.pausesheetshown.toggle()
                 } label: {
-                     Image(systemName: "plus.circle")
+                    Image(systemName: "plus.circle")
                 }
             }
         }.sheet(isPresented: $alarmdata.pausesheetshown) {
-           DatePickerView()
+            DatePickerView()
         }
     }
 }

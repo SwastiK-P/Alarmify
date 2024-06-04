@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 struct FeaturesListVIew: View {
     @EnvironmentObject var alarmdata: AlarmData
@@ -16,12 +17,17 @@ struct FeaturesListVIew: View {
                 HStack {
                     Text("Label")
                     TextField("Silent alarm", text: $alarmdata.Alarmlabel)
-                            .multilineTextAlignment(.trailing)
+                        .multilineTextAlignment(.trailing)
                 }
                 SoundSelectorView()
                 Toggle("Vibrate", isOn: $alarmdata.vibrate).tint(.accentColor)
                 
             }.preferredColorScheme(.dark)
+                .onChange(of: alarmdata.vibrate) {
+                    if alarmdata.vibrate == true {
+                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {   }
+                    }
+                }
         }
     }
 }

@@ -37,12 +37,12 @@ struct AlarmView: View {
                 alarmdata.editsheetshown.toggle()
                 lighthaptic.impactOccurred()
             }.preferredColorScheme(.dark)
-        
+            
         }.sheet(isPresented: $alarmdata.editsheetshown) {
-           EditView()
+            EditView()
         }
         .padding()
-          
+        
         
     }
 }

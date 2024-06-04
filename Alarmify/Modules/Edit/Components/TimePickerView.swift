@@ -13,7 +13,7 @@ struct TimePickerView: View {
         VStack {
             DatePicker("", selection: $alarmdata.PickedTime, displayedComponents: [.hourAndMinute])
                 .datePickerStyle(.wheel)
-               .labelsHidden()
+                .labelsHidden()
         }
     }
 }
