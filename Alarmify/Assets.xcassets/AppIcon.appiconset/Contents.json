@@ -1,9 +1,15 @@
 {
   "images" : [
     {
+      "filename" : "App icon pack.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
     }
   ],
   "info" : {

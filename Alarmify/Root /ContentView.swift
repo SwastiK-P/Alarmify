@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var alarmdata = AlarmData()
     var body: some View {
         TabView {
             HomeView()
                 .tabItem {Label("Alarms", systemImage: "alarm.fill")}
-        }
+        }.environmentObject(alarmdata)
         
     }
 }

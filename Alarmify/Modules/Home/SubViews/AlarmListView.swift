@@ -15,10 +15,11 @@ struct AlarmListView: View {
                     AlarmView()
                 }
             }
-        }
+        }.scrollIndicators(.hidden)
     }
 }
 
 #Preview {
     AlarmListView()
+        .environmentObject(AlarmData())
 }
