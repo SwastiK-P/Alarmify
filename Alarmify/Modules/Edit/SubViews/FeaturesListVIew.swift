@@ -13,15 +13,34 @@ struct FeaturesListVIew: View {
     var body: some View {
         NavigationStack {
             List {
-                DaySelectionView()
-                HStack {
-                    Text("Label")
-                    TextField("Silent alarm", text: $alarmdata.Alarmlabel)
-                        .multilineTextAlignment(.trailing)
+                Section {
+                    DaySelectionView()
+                    HStack {
+                        Text("Label")
+                        TextField("Silent alarm", text: $alarmdata.Alarmlabel)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    SoundSelectorView()
+                    Toggle("Vibrate", isOn: $alarmdata.vibrate).tint(.accentColor)
                 }
-                SoundSelectorView()
-                Toggle("Vibrate", isOn: $alarmdata.vibrate).tint(.accentColor)
-                
+                Section {
+                    HStack {
+                        Spacer()
+                        Button("Delete Alarm") {
+                            alarmdata.deletesheetshwon = true
+                        }.tint(.red)
+                            .confirmationDialog("Delete Alarm", isPresented: $alarmdata.deletesheetshwon) {
+                                Button(role: .destructive) {
+                                    alarmdata.deletesheetshwon = false
+                                }
+                            label:
+                                {
+                                    Text("Delete")
+                                }
+                            }
+                        Spacer()
+                    }
+                }
             }.preferredColorScheme(.dark)
                 .onChange(of: alarmdata.vibrate) {
                     if alarmdata.vibrate == true {

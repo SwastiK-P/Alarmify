@@ -10,6 +10,7 @@ import Foundation
 class AlarmData: ObservableObject {
     @Published var editsheetshown = false
     @Published var pausesheetshown = false
+    @Published var deletesheetshwon = false
     @Published var PickedTime = Date.now
     @Published var PauseDates: Set<DateComponents> = []
     @Published var Alarmlabel = ""
