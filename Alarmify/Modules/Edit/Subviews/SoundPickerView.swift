@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SoundPickerView: View {
     @EnvironmentObject var alarmdata: AlarmData
-    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         NavigationStack {
             Picker(selection: $alarmdata.currentSound) {
@@ -18,7 +17,7 @@ struct SoundPickerView: View {
                 }
             } label: {
                 Text("Sound")
-                    .foregroundStyle(colorScheme == .dark ? .white: .black)
+                    .foregroundStyle(.primary)
             }.pickerStyle(.navigationLink)
         }
     }
