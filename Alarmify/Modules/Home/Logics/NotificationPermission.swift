@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-func GetNotificationPermission() {
+func getNotificationPermission() {
     UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge], completionHandler: { success, error in
         if success {
             print("Permission Granted!")

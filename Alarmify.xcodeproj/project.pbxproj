@@ -15,16 +15,16 @@
 		7A53A00B2C0DD1DB009D8094 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A00A2C0DD1DB009D8094 /* EditView.swift */; };
 		7A53A0102C0DD860009D8094 /* AlarmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A00F2C0DD860009D8094 /* AlarmRepository.swift */; };
 		7A53A0142C0DD909009D8094 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0132C0DD909009D8094 /* AlarmView.swift */; };
-		7A53A0172C0DDD0F009D8094 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */; };
+		7A53A0172C0DDD0F009D8094 /* AlarmsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0162C0DDD0F009D8094 /* AlarmsListView.swift */; };
 		7A53A01A2C0DE053009D8094 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A0192C0DE053009D8094 /* HomePresenter.swift */; };
 		7A53A01C2C0DE064009D8094 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A01B2C0DE064009D8094 /* EditPresenter.swift */; };
 		7A53A01E2C0DE7F4009D8094 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53A01D2C0DE7F4009D8094 /* TimePickerView.swift */; };
-		7A66A1892C0F380B004CC6D3 /* FeaturesListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1882C0F380B004CC6D3 /* FeaturesListVIew.swift */; };
-		7A66A18B2C0F3B71004CC6D3 /* SoundLabelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A18A2C0F3B71004CC6D3 /* SoundLabelList.swift */; };
-		7A66A1912C0F4D68004CC6D3 /* DaysSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1902C0F4D67004CC6D3 /* DaysSelectorView.swift */; };
+		7A66A18B2C0F3B71004CC6D3 /* SoundPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A18A2C0F3B71004CC6D3 /* SoundPickerView.swift */; };
+		7A66A1912C0F4D68004CC6D3 /* WeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1902C0F4D67004CC6D3 /* WeekDaysView.swift */; };
 		7A66A1942C0F530D004CC6D3 /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1932C0F530D004CC6D3 /* NotificationPermission.swift */; };
-		7A66A1962C0F6011004CC6D3 /* DaySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1952C0F6011004CC6D3 /* DaySelectionView.swift */; };
+		7A66A1962C0F6011004CC6D3 /* DayPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1952C0F6011004CC6D3 /* DayPickerView.swift */; };
 		7A66A1992C0F6B01004CC6D3 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A66A1982C0F6B00004CC6D3 /* DatePickerView.swift */; };
+		7A9ED8F42C1031FA000C2D97 /* DeleteAlarmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9ED8F32C1031FA000C2D97 /* DeleteAlarmButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,17 +37,17 @@
 		7A53A00A2C0DD1DB009D8094 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		7A53A00F2C0DD860009D8094 /* AlarmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRepository.swift; sourceTree = "<group>"; };
 		7A53A0132C0DD909009D8094 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
-		7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		7A53A0162C0DDD0F009D8094 /* AlarmsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsListView.swift; sourceTree = "<group>"; };
 		7A53A0192C0DE053009D8094 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		7A53A01B2C0DE064009D8094 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
 		7A53A01D2C0DE7F4009D8094 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		7A53A01F2C0DF79D009D8094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A66A1882C0F380B004CC6D3 /* FeaturesListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesListVIew.swift; sourceTree = "<group>"; };
-		7A66A18A2C0F3B71004CC6D3 /* SoundLabelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLabelList.swift; sourceTree = "<group>"; };
-		7A66A1902C0F4D67004CC6D3 /* DaysSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysSelectorView.swift; sourceTree = "<group>"; };
+		7A66A18A2C0F3B71004CC6D3 /* SoundPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPickerView.swift; sourceTree = "<group>"; };
+		7A66A1902C0F4D67004CC6D3 /* WeekDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysView.swift; sourceTree = "<group>"; };
 		7A66A1932C0F530D004CC6D3 /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
-		7A66A1952C0F6011004CC6D3 /* DaySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectionView.swift; sourceTree = "<group>"; };
+		7A66A1952C0F6011004CC6D3 /* DayPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPickerView.swift; sourceTree = "<group>"; };
 		7A66A1982C0F6B00004CC6D3 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		7A9ED8F32C1031FA000C2D97 /* DeleteAlarmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAlarmButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			children = (
 				7A53A0072C0DD1BA009D8094 /* HomeView.swift */,
 				7A53A0192C0DE053009D8094 /* HomePresenter.swift */,
-				7A3FC6FD2C0F268500D7E77C /* SubViews */,
+				7A3FC6FD2C0F268500D7E77C /* Subviews */,
 				7A66A1922C0F52C1004CC6D3 /* Logics */,
 			);
 			path = Home;
@@ -86,27 +86,31 @@
 			children = (
 				7A53A00A2C0DD1DB009D8094 /* EditView.swift */,
 				7A53A01B2C0DE064009D8094 /* EditPresenter.swift */,
-				7A3FC6FE2C0F26A700D7E77C /* SubViews */,
-				7A66A1972C0F61F0004CC6D3 /* Components */,
+				7A3FC6FE2C0F26A700D7E77C /* Subviews */,
 			);
 			path = Edit;
 			sourceTree = "<group>";
 		};
-		7A3FC6FD2C0F268500D7E77C /* SubViews */ = {
+		7A3FC6FD2C0F268500D7E77C /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
 				7A53A0132C0DD909009D8094 /* AlarmView.swift */,
-				7A53A0162C0DDD0F009D8094 /* AlarmListView.swift */,
+				7A53A0162C0DDD0F009D8094 /* AlarmsListView.swift */,
 			);
-			path = SubViews;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
-		7A3FC6FE2C0F26A700D7E77C /* SubViews */ = {
+		7A3FC6FE2C0F26A700D7E77C /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				7A66A1882C0F380B004CC6D3 /* FeaturesListVIew.swift */,
+				7A66A18A2C0F3B71004CC6D3 /* SoundPickerView.swift */,
+				7A53A01D2C0DE7F4009D8094 /* TimePickerView.swift */,
+				7A66A1902C0F4D67004CC6D3 /* WeekDaysView.swift */,
+				7A66A1952C0F6011004CC6D3 /* DayPickerView.swift */,
+				7A66A1982C0F6B00004CC6D3 /* DatePickerView.swift */,
+				7A9ED8F32C1031FA000C2D97 /* DeleteAlarmButton.swift */,
 			);
-			path = SubViews;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		7A539FED2C0DD04C009D8094 = {
@@ -130,7 +134,7 @@
 			children = (
 				7A53A01F2C0DF79D009D8094 /* Info.plist */,
 				7A53A0122C0DD88A009D8094 /* App */,
-				7A53A0112C0DD86F009D8094 /* Root  */,
+				7A53A0112C0DD86F009D8094 /* Root */,
 				7A3FC6FA2C0F263D00D7E77C /* Modules */,
 				7A53A00E2C0DD849009D8094 /* Repositry */,
 				7A539FFD2C0DD04F009D8094 /* Assets.xcassets */,
@@ -155,12 +159,12 @@
 			path = Repositry;
 			sourceTree = "<group>";
 		};
-		7A53A0112C0DD86F009D8094 /* Root  */ = {
+		7A53A0112C0DD86F009D8094 /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				7A539FFB2C0DD04D009D8094 /* ContentView.swift */,
 			);
-			path = "Root ";
+			path = Root;
 			sourceTree = "<group>";
 		};
 		7A53A0122C0DD88A009D8094 /* App */ = {
@@ -177,18 +181,6 @@
 				7A66A1932C0F530D004CC6D3 /* NotificationPermission.swift */,
 			);
 			path = Logics;
-			sourceTree = "<group>";
-		};
-		7A66A1972C0F61F0004CC6D3 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				7A66A18A2C0F3B71004CC6D3 /* SoundLabelList.swift */,
-				7A53A01D2C0DE7F4009D8094 /* TimePickerView.swift */,
-				7A66A1902C0F4D67004CC6D3 /* DaysSelectorView.swift */,
-				7A66A1952C0F6011004CC6D3 /* DaySelectionView.swift */,
-				7A66A1982C0F6B00004CC6D3 /* DatePickerView.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,20 +253,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A66A1962C0F6011004CC6D3 /* DaySelectionView.swift in Sources */,
-				7A66A1912C0F4D68004CC6D3 /* DaysSelectorView.swift in Sources */,
+				7A66A1962C0F6011004CC6D3 /* DayPickerView.swift in Sources */,
+				7A66A1912C0F4D68004CC6D3 /* WeekDaysView.swift in Sources */,
+				7A9ED8F42C1031FA000C2D97 /* DeleteAlarmButton.swift in Sources */,
 				7A66A1942C0F530D004CC6D3 /* NotificationPermission.swift in Sources */,
-				7A66A18B2C0F3B71004CC6D3 /* SoundLabelList.swift in Sources */,
+				7A66A18B2C0F3B71004CC6D3 /* SoundPickerView.swift in Sources */,
 				7A53A0102C0DD860009D8094 /* AlarmRepository.swift in Sources */,
 				7A53A0082C0DD1BA009D8094 /* HomeView.swift in Sources */,
 				7A66A1992C0F6B01004CC6D3 /* DatePickerView.swift in Sources */,
 				7A53A01C2C0DE064009D8094 /* EditPresenter.swift in Sources */,
 				7A539FFC2C0DD04D009D8094 /* ContentView.swift in Sources */,
-				7A66A1892C0F380B004CC6D3 /* FeaturesListVIew.swift in Sources */,
 				7A53A00B2C0DD1DB009D8094 /* EditView.swift in Sources */,
 				7A53A0142C0DD909009D8094 /* AlarmView.swift in Sources */,
 				7A53A01E2C0DE7F4009D8094 /* TimePickerView.swift in Sources */,
-				7A53A0172C0DDD0F009D8094 /* AlarmListView.swift in Sources */,
+				7A53A0172C0DDD0F009D8094 /* AlarmsListView.swift in Sources */,
 				7A539FFA2C0DD04D009D8094 /* AlarmifyApp.swift in Sources */,
 				7A53A01A2C0DE053009D8094 /* HomePresenter.swift in Sources */,
 			);

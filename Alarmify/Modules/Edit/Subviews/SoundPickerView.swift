@@ -7,19 +7,18 @@
 
 import SwiftUI
 
-struct SoundSelectorView: View {
+struct SoundPickerView: View {
     @EnvironmentObject var alarmdata: AlarmData
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        
         NavigationStack {
-            
-            Picker(selection: $alarmdata.CurrentSound) {
-                ForEach(alarmdata.Sounds, id: \.self) {
+            Picker(selection: $alarmdata.currentSound) {
+                ForEach(alarmdata.sounds, id: \.self) {
                     Text($0)
                 }
             } label: {
                 Text("Sound")
-                    .foregroundStyle(.white)
+                    .foregroundStyle(colorScheme == .dark ? .white: .black)
             }.pickerStyle(.navigationLink)
         }
     }
@@ -27,7 +26,7 @@ struct SoundSelectorView: View {
 
 #Preview {
     
-    SoundSelectorView()
+    SoundPickerView()
         .environmentObject(AlarmData())
     
 }

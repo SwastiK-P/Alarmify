@@ -8,14 +8,14 @@
 import Foundation
 
 class AlarmData: ObservableObject {
-    @Published var editsheetshown = false
-    @Published var pausesheetshown = false
-    @Published var deletesheetshwon = false
-    @Published var PickedTime = Date.now
-    @Published var PauseDates: Set<DateComponents> = []
-    @Published var Alarmlabel = ""
-    @Published var Sounds = ["None", "Arpeggio", "Breaking", "Opening", "Chirp", "Daybreak", "Tease", "Seedling"]
-    @Published var CurrentSound = "None"
+    @Published var editSheetShown = false
+    @Published var pauseSheetShown = false
+    @Published var deleteSheetShwon = false
+    @Published var pickedTime = Date.now
+    @Published var pauseDates: Set<DateComponents> = []
+    @Published var alarmLabel = ""
+    @Published var sounds = ["None", "Arpeggio", "Breaking", "Opening", "Chirp", "Daybreak", "Tease", "Seedling"]
+    @Published var currentSound = "None"
     @Published var vibrate = false
-    @Published var Everyday = false
+    @Published var everyDay = false
 }

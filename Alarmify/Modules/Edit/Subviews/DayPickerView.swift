@@ -7,30 +7,31 @@
 
 import SwiftUI
 
-struct DaySelectionView: View {
+struct DayPickerView: View {
     @EnvironmentObject var alarmdata: AlarmData
     var body: some View {
         VStack {
-            Toggle("Everyday", isOn: $alarmdata.Everyday).tint(.accentColor)
+            Toggle("Everyday", isOn: $alarmdata.everyDay)
+                .tint(.accentColor)
             WeekDaysView()
             HStack {
                 Image(systemName: "deskclock")
-                    .padding(.trailing, 10)
+                    .padding(.trailing, 8)
                 Text("Pause Alarm")
                 Spacer()
                 Button {
-                    alarmdata.pausesheetshown.toggle()
+                    alarmdata.pauseSheetShown.toggle()
                 } label: {
                     Image(systemName: "plus.circle")
                 }
             }
-        }.sheet(isPresented: $alarmdata.pausesheetshown) {
+        }.sheet(isPresented: $alarmdata.pauseSheetShown) {
             DatePickerView()
         }
     }
 }
 
 #Preview {
-    DaySelectionView()
+    DayPickerView()
         .environmentObject(AlarmData())
 }

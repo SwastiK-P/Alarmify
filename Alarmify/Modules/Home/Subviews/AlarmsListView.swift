@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AlarmListView: View {
+struct AlarmsListView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
@@ -20,6 +20,6 @@ struct AlarmListView: View {
 }
 
 #Preview {
-    AlarmListView()
+    AlarmsListView()
         .environmentObject(AlarmData())
 }

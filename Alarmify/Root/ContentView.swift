@@ -12,7 +12,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             HomeView()
-                .tabItem {Label("Alarms", systemImage: "alarm.fill")}
+                .tabItem {
+                    Label("Alarms", systemImage: "alarm.fill")
+                }
         }.environmentObject(alarmdata)
     }
 }

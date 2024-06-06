@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 struct EditView: View {
     @EnvironmentObject var alarmdata: AlarmData
@@ -13,25 +14,43 @@ struct EditView: View {
         NavigationStack {
             VStack {
                 TimePickerView()
-                FeaturesListVIew()
-                
+                List {
+                    Section {
+                        DayPickerView()
+                        HStack {
+                            Text("Label")
+                            TextField("Silent alarm", text: $alarmdata.alarmLabel)
+                                .multilineTextAlignment(.trailing)
+                        }
+                        SoundPickerView()
+                        Toggle("Vibrate", isOn: $alarmdata.vibrate)
+                            .tint(.accentColor)
+                            .onChange(of: alarmdata.vibrate) {
+                                if alarmdata.vibrate == true {
+                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {   }
+                                }
+                            }
+                    }
+                    Section {
+                        DeleteAlarmButton()
+                    }
+                }
             }.navigationTitle("Edit Alarm")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button("cancel") {
                             print("toggled!")
-                            alarmdata.editsheetshown.toggle()
+                            alarmdata.editSheetShown.toggle()
                         }
                     }
                     ToolbarItem(placement: .topBarTrailing) {
                         Button("Save") {
                             print("toggled!")
-                            alarmdata.editsheetshown.toggle()
+                            alarmdata.editSheetShown.toggle()
                         }.bold()
                     }
                 }
-                .preferredColorScheme(.dark)
         }
     }
 }

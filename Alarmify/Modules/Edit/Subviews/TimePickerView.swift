@@ -10,11 +10,9 @@ import SwiftUI
 struct TimePickerView: View {
     @EnvironmentObject var alarmdata: AlarmData
     var body: some View {
-        VStack {
-            DatePicker("", selection: $alarmdata.PickedTime, displayedComponents: [.hourAndMinute])
-                .datePickerStyle(.wheel)
-                .labelsHidden()
-        }
+        DatePicker("", selection: $alarmdata.pickedTime, displayedComponents: [.hourAndMinute])
+            .datePickerStyle(.wheel)
+            .labelsHidden()
     }
 }
 

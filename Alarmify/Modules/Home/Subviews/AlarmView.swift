@@ -34,16 +34,14 @@ struct AlarmView: View {
                 
             }
             .onTapGesture {
-                alarmdata.editsheetshown.toggle()
+                alarmdata.editSheetShown.toggle()
                 lighthaptic.impactOccurred()
-            }.preferredColorScheme(.dark)
+            }
             
-        }.sheet(isPresented: $alarmdata.editsheetshown) {
+        }.sheet(isPresented: $alarmdata.editSheetShown) {
             EditView()
         }
         .padding()
-        
-        
     }
 }
 

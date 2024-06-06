@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                AlarmListView()
+                AlarmsListView()
             }.navigationTitle("Alarms")
                 .toolbar {
                     Button {
@@ -20,9 +20,10 @@ struct HomeView: View {
                     }
                 }
                 .onAppear {
-                    GetNotificationPermission()
+                    getNotificationPermission()
                 }
-        }.preferredColorScheme(.dark)
+        }
+        .backgroundStyle(.black)
     }
 }
 
@@ -30,7 +31,9 @@ struct HomeView: View {
     TabView {
         HomeView()
             .environmentObject(AlarmData())
-            .tabItem {Label("Alarms", systemImage: "alarm.fill")}
+            .tabItem {
+                Label("Alarms", systemImage: "alarm.fill")
+            }
         
     }
 }
